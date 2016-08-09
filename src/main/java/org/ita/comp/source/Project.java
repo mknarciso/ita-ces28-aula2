@@ -19,5 +19,12 @@ class Project {
 	      // Changed .id for .getId(), and [i] for get(i)
 		  System.out.println("project has person "+participants.get(i).getId());
   }
+  
+  /// V2
+  boolean participate(Person p) {
+	    return this.participants.contains(p);
+    }   
+    
+	   
 }
 
