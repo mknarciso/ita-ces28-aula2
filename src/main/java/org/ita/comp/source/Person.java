@@ -2,12 +2,12 @@ package org.ita.comp.source;
 //import java.util.*;
 
 public class Person {
-	static int nextId=0;
+	static int nextId_=0;
 	//Changed Id from public to private, and moved it to the top 
-	private int id;
+	private int id_;
 	
 	Person(){
-		id = nextId++;
+		id_ = nextId_++;
 	}
 	
 	/*boolean participate(Project p) {
@@ -19,7 +19,7 @@ public class Person {
 	}*/
 	   
 	public int getId() {
-	  return id;
+	  return id_;
 	}
 	
 	
@@ -36,16 +36,16 @@ public class Person {
 		Person x = new Person();
 		//if (x.participate(pj)) {
 		if (pj.participate(x)) {
-			System.out.println("Person "+x.id+" belongs to project");
+			System.out.println("Person "+x.getId()+" belongs to project");
 		} else {
-			System.out.println("Person "+x.id+" does not belong to project");
+			System.out.println("Person "+x.getId()+" does not belong to project");
 		}
 		Person p = ps[1];
 		//if (p.participate(pj)) {
 		if (pj.participate(p)) {
-			System.out.println("Person "+p.id+" belongs to project");
+			System.out.println("Person "+p.getId()+" belongs to project");
 		} else {
-			System.out.println("Person "+p.id+" does not belong to project");
+			System.out.println("Person "+p.getId()+" does not belong to project");
 		}
 		
 

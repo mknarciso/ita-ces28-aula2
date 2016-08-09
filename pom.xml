@@ -4,7 +4,7 @@
     <groupId>org.ita.comp.source</groupId>
     <artifactId>ces-28</artifactId>
     <packaging>jar</packaging>
-    <version>2</version>
+    <version>3</version>
     <name>person</name>
     <url>http://maven.apache.org</url>
     <dependencies>
